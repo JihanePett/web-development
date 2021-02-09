@@ -78,3 +78,123 @@ border: 1px solid black !important;
     background: white;
     z-index: -1;
 }
+
+
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
+
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link, .remove-item {
+    cursor: pointer;
+}
+
+.row.Fivedcc {
+    margin-top: 15px;
+}
+
+/* -------------------------------- Github */
+.center-form.github-repo {
+    margin-top: 50px;
+}
+
+.repo-list {
+  display: block;
+  clear: both;
+  width: 100%;
+}
+
+.repo-list ul {
+  font-size: 1.2em;
+}
+
+.repo-list ul li {
+  display: block;
+}
+
+.repo-list ul li a {
+  font-weight: bold;
+  padding: 6px 9px;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  border: 1px solid orange;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #fff;
+  background-color: orange;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fcc205ef), to(orange));
+  background-image: -webkit-linear-gradient(top, #fcc205ef, orange);
+  background-image: -moz-linear-gradient(top, #fcc205ef,orange);
+  background-image: -ms-linear-gradient(top, #fcc205ef, orange);
+  background-image: -o-linear-gradient(top, #fcc205ef, orange);
+  background-image: linear-gradient(top, #fcc205ef, orange);
+}
+
+.repo-list ul li a:hover {
+  background-color: #fcc205ce;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(238, 160, 15, 0.925)), to(#fcc205ce));
+  background-image: -webkit-linear-gradient(top, rgba(238, 160, 15, 0.925), #fcc205ce);
+  background-image: -moz-linear-gradient(top, rgba(238, 160, 15, 0.925), #fcc205ce);
+  background-image: -ms-linear-gradient(top, rgba(238, 160, 15, 0.925), #fcc205ce);
+  background-image: -o-linear-gradient(top, rgba(238, 160, 15, 0.925), #fcc205ce);
+  background-image: linear-gradient(top, rgba(238, 160, 15, 0.925), #fcc205ce);
+}
+
+.repo-list ul li a:active {
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+.repo-list ul li a span {
+  font-family: "Courier New", Courier, "Lucida Typewriter", monospace;
+  font-size: 0.9em;
+}
+
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+.container {
+max-width: 80%;
+}
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+.fixed-top-desktop-only {
+position: fixed;
+top: 0;
+right: 0;
+left: 0;
+z-index: 1030;
+}
+
+
+.header-container {
+padding-top: 164px;
+}
+}
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
+}
