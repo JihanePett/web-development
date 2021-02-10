@@ -163,6 +163,44 @@ a.category-badge > span.badge:hover {
   font-size: 0.9em;
 }
 
+/* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 10px solid black;
+    position: absolute;
+    top: -10px;
+    right: 36px;
+}
+
+i.fas.fa-arrow-up.mx-auto.my-auto {
+    color: #9f9b9d;
+}
+
+.arrow-up-link {
+    cursor: pointer;
+}
+
+/* -------------------------------- Blog */
+a.post-title {
+    color: black;
+    text-decoration: none;
+}
+
+a.post-title:hover{
+    color:#e3dcca;
+}
+
+.post-details-container, .blog-container{
+    padding-bottom: 15px;
+}
+
+.blog-btn {
+    margin-bottom: 10px;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
