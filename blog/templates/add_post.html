@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+{% block content %}
+    <div class="overlay"></div>
+    <!-- Page Content -->
+<div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <hr>
+                    <h2 class="logo-font mb-4">Blog Management</h2>
+                    <h5 class="text-muted">Add a Post</h5>
+                    <hr></div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="from-group">
+                        <form method="POST" action="{% url 'add_post' %}" class="form mb-2" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            {{ form.as_p }}
+                            <div class="text-right">
+                                <a class="btn btn-outline-black rounded-0" href="{% url 'blog' %}">Cancel</a>
+                                <button class="btn btn-white rounded-0" type="submit">Add a Post</button>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    {% endblock %}
+    {% block postloadjs %}
+        {{ block.super }}
+            <script>
+                $('#new-image-2').change(function () {
+                    var file = $('#new-image-2')[0].files[0];
+                    $('#filename-2').text (`Image will be set to: ${
+                        file.name
+                    }`);
+                });
+            </script>
+    {% endblock %}

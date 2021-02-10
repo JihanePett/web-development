@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+{% block content %}
+    <div class="overlay"></div>
+    <!-- Page Content -->
+    <div class="container post-details-container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    {% if post.image %}
+                        <a href="{{ post.image.url }}">
+                            <img src="{{ post.image.url }}" class="card-img-top" alt="{{ post.name }}"></a>
+                        {% else %}
+                            <a href="">
+                                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ post.name }}"/>
+                            </a>
+                        {% endif %}
+                        <div class="card-body">
+                            <h5 class="card-title">{{ post.title }}</h5>
+                            <p class="card-text">{{ post.body }}</p>
+                        </div>
+                        {% if request.user.is_superuser %}
+                            <small class="ml-3">
+                                <a href="{% url 'edit_post' post.pk %}">Edit the Post</a>
+                                |
+                                <a class="text-danger" href="{% url 'delete_post' post.pk %}">Delete</a>
+                            </small>
+                        {% endif %}
+                        <div class="text-center blog-btn">
+                            <a class="find-out-button btn-white btn-lg rounded-0 text-uppercase py-1" href="{% url 'blog' %}">Blog Homepage</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endblock %}
