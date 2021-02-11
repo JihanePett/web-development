@@ -169,20 +169,47 @@ a.category-badge > span.badge:hover {
     height: 0;
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
-    border-bottom: 10px solid black;
+    border-bottom: 10px solid orange;
     position: absolute;
     top: -10px;
     right: 36px;
 }
 
+/* arrows scroll-up */
+.arrow-up-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
 i.fas.fa-arrow-up.mx-auto.my-auto {
-    color: #9f9b9d;
+    color: orange;
 }
 
 .arrow-up-link {
     cursor: pointer;
 }
 
+/* -------------------------------- Contact */
+.container.container-contact {
+    margin-top: 20px;
+}
+
+.col-12.contact-message {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.submit-button{
+    background-color: orange;
+}
+
+.submit-button:hover{
+    background-color: black;
+    color: orange;
+}
 /* -------------------------------- Blog */
 a.post-title {
     color: black;
@@ -199,6 +226,16 @@ a.post-title:hover{
 
 .blog-btn {
     margin-bottom: 10px;
+}
+
+.addapost-heading{
+    margin-bottom: 20px;
+    color: orange;
+}
+
+.addapost-heading:hover{
+    text-decoration: none;
+    color: black;
 }
 
 /* -------------------------------- Media Queries */
