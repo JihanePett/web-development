@@ -98,7 +98,14 @@ a.category-badge > span.badge:hover {
 }
 
 .row.Fivedcc {
-    margin-top: 15px;
+    margin-top: 5px;
+}
+
+/* -------------------------------- Homepage profile image */
+img.img-fluid.profile-img {
+    display: block;
+    height: 50vh;
+    float: right;
 }
 
 /* -------------------------------- Github */
