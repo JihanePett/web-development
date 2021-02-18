@@ -31,6 +31,19 @@
             </div>
         </div>
     </div>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a class="carousel-item" href="https://jihanepett.github.io/_Studio_Ghibli/"><img src="../media/Ghibli-1.png"></a>
+            </div>
+        </div>
+    <a class="carousel-item" href="https://jihanepett.github.io/_Studio_Ghibli/"><img src="../media/Ghibli-1.png"></a>
+    <a class="carousel-item" href="https://jihanepett.github.io/my-CV/index.html"><img src="../media/Project_CV.png"></a>
+    <a class="carousel-item" href="https://jihanepett.github.io/NaturalMarocSkincare/"><img src="../media/Project_static_shop.png"></a>
+    <a class="carousel-item" href="https://jihanepett.github.io/whiskey-site/"><img src="../media/Project_whiskey_2.png"></a>
+    <a class="carousel-item" href="https://tbd--recipes.herokuapp.com/"><img src="../media/tbd-1.png"></a>
+    <a class="carousel-item" href="https://jbonjoviband.herokuapp.com/"><img src="../media/jbj-1.png"></a>
+  </div>
     <div class="container">
         <div class="row Fivedcc">
             <div class="col col-md-12 my-auto">
@@ -40,10 +53,19 @@
                 <img src="../media/5dcc.png" class="img-fluid" alt="5DCC cert">
                 <div class="my-5">
                     <h4 class="text-center">
-                        <a href="https://codeinstitute.net/5-day-coding-challenge/?utm_term=&utm_campaign=&utm_source=adwords&utm_medium=ppc&hsa_net=adwords&hsa_tgt=dsa-564412108988&hsa_ad=306243272841&hsa_acc=8983321581&hsa_grp=53978589537&hsa_mt=b&hsa_cam=1421820850&hsa_kw=&hsa_ver=3&hsa_src=g&gclid=EAIaIQobChMIyPCFoeal7gIVxu7tCh1r4QiVEAAYASAAEgJRyvD_BwE&gclsrc=aw.ds" class="find-out-button btn btn-lg rounded-0 text-uppercase py-3">the 5DCC</a>
+                        <a href="https://codeinstitute.net/5-day-coding-challenge/?utm_term=&utm_campaign=&utm_source=adwords&utm_medium=ppc&hsa_net=adwords&hsa_tgt=dsa-564412108988&hsa_ad=306243272841&hsa_acc=8983321581&hsa_grp=53978589537&hsa_mt=b&hsa_cam=1421820850&hsa_kw=&hsa_ver=3&hsa_src=g&gclid=EAIaIQobChMIyPCFoeal7gIVxu7tCh1r4QiVEAAYASAAEgJRyvD_BwE&gclsrc=aw.ds" >5DCC</a>
                     </h4>
                 </div>
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block extra-js %}
+{ blocksuper }
+<script>
+$('#myCarousel').on('slide.bs.carousel', function () {
+  // do something…
+})
+</script>
 {% endblock %}
