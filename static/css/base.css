@@ -101,6 +101,11 @@ a.category-badge > span.badge:hover {
     margin-top: 5px;
 }
 
+.jumbotron-transparent {
+    background-color: transparent;
+    color: black;
+}
+
 /* -------------------------------- Homepage profile image */
 img.img-fluid.profile-img {
     display: block;
