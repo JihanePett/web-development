@@ -10,46 +10,52 @@
 {% endblock %}
 {% block content %}
     <div class="overlay"></div>
-    {% if message_name %}
-    <div class="center-align"><h2>Thanks {{ message_name }}!</h2>
-        <p> We have received your mail and will respond shortly</p>
-    </div>
-    {% else %}
-    <div class="container container-contact">
-    <div class="row">
-        <div class="col-6 col-md-4">
-            <div class="contact-info">
-                <h5>Address</h5>
-                <p>Kilcool Kilnaleck Co-Cavan</p>
-                <h5>Phone</h5>
-                <p>086 182 2748</p>
-                <h5>Email</h5>
-                <p>jihane.petticrew@gmail.com</p>
+    <div class="container">
+        <img src="../media/contact.png" class="img-fluid" alt="contact me"></div>
+        {% if message_name %}
+            <div class="center-align">
+                <h2>Thanks
+                    {{ message_name }}!</h2>
+                <p>
+                    We have received your mail and will respond shortly</p>
             </div>
-        </div>
-        <div class="col-6 col-md-8">
-            <div class="contact-form">
-                <div class="section-heading">
-                    <h4>Get in touch {{ message_name }}</h4>
-                </div>
-                <form action="{% url 'contact' %}" method="post">
-                    {% csrf_token %}
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <input type="text" class="form-control mb-30" placeholder="Your name" name="message-name"></div>
-                            <div class="col-lg-6">
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="message-mail"></div>
-                                <div class="col-12 contact-message">
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message"></textarea>
-                                </div>
-                                <div class="col-12 text-center">
-                                    <button type="submit" class="submit-button btn btn-lg rounded-0 text-uppercase py-3">Send Message</button>
+        {% else %}
+            <div class="container container-contact">
+                <div class="row">
+                    <div class="col-6 col-md-4">
+                        <div class="contact-info">
+                            <h5>Address</h5>
+                            <p>Kilcool Kilnaleck Co-Cavan</p>
+                            <h5>Phone</h5>
+                            <p>086 182 2748</p>
+                            <h5>Email</h5>
+                            <p>jihane.petticrew@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-8">
+                        <div class="contact-form">
+                            <div class="section-heading">
+                                <h4>Get in touch
+                                    {{ message_name }}</h4>
+                            </div>
+                            <form action="{% url 'contact' %}" method="post">
+                                {% csrf_token %}
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <input type="text" class="form-control mb-30" placeholder="Your name" name="message-name"></div>
+                                        <div class="col-lg-6">
+                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="message-mail"></div>
+                                            <div class="col-12 contact-message">
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message"></textarea>
+                                            </div>
+                                            <div class="col-12 text-center">
+                                                <button type="submit" class="submit-button btn btn-lg rounded-0 text-uppercase py-3">Send Message</button>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
-                        </form>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>    
-            {% endif %}
-        {% endblock %}
+                {% endif %}
+            {% endblock %}
