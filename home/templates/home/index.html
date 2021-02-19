@@ -9,124 +9,189 @@
         </div>
     </div>
 {% endblock %}
-{% block extra-js %}
-{% endblock %}
+{% block extra-js %}{% endblock %}
 {% block content %}
     <div class="container h-100">
         <div class="row">
             <div class="col-5 col-md-6 ">
-                <img src="../media/Profile-img.jpg" class="img-fluid profile-img" alt="jihanep">
-            </div>
-            <div class="col-7 col-md-6 my-auto">
-                <h1 class="display-4 logo-font text-black">
-                    Junior Web Developer
-                </h1>
-                <div class="my-5">
-                    <h4>
-                        <a href="{% url 'github' %}" class="portfolio-button btn btn-lg rounded-0 text-uppercase py-3">Portfolio</a>
-                        <a href="../media/JihaneP_CV.pdf" class="portfolio-button btn btn-lg rounded-0 text-uppercase py-3" target="_blank">Download my CV
-                            <i class="fas fa-download pro-xp-dl-link" aria-hidden="true"></i>
-                        </a>
-                    </h4>
+                <img src="../media/Profile-img.jpg" class="img-fluid profile-img" alt="jihanep"></div>
+                <div class="col-7 col-md-6 my-auto">
+                    <h1 class="display-4 logo-font text-black">
+                        Junior Web Developer
+                    </h1>
+                    <div class="my-5">
+                        <h4>
+                            <a href="{% url 'github' %}" class="portfolio-button btn btn-lg rounded-0 text-uppercase py-3">Portfolio</a>
+                            <a href="../media/JihaneP_CV.pdf" class="portfolio-button btn btn-lg rounded-0 text-uppercase py-3" target="_blank">Download my CV
+                                <i class="fas fa-download pro-xp-dl-link" aria-hidden="true"></i>
+                            </a>
+                        </h4>
+                    </div>
                 </div>
             </div>
-        </div>
-
-    <section class="py-5 header text-center">
-        <div class="container py-4">
-            <header>
-                <h1 class="display-4 text-black">Feel free to navigate through some samples of my responsive work below</h1>
-                <p class="font-italic text-muted mb-1">Click on the links to visit each deployed site</p>
-                <p class="font-italic text-muted mb-1">Alternatively you can visit my github page for all the coding involved</p>
-            </header>
-        </div>
-    </section>
-    <section class="pb-5">
-        <div
-            class="container text-center">
-            <!-- Masonry grid -->
-            <div
-                class="gallery-wrapper">
-                <!-- Grid sizer -->
-                <div class="grid-sizer col-lg-4 col-md-6"></div>
-                <!-- Grid item -->
-                <div class="col-lg-4 col-md-6 grid-item mb-4 value-img">
-                    <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="../media/Project_CV.png" alt="project_cv" data-action="zoom">
-                    <h2 class="h4 text-black">Static CV</h2>
-                                        <p class="small text-muted font-italic">This site...
-                        <a href=""></a>
-                    </p>
+            <section class="py-5 header text-center">
+                <div class="container py-4">
+                    <header>
+                        <h1 class="display-4 text-black">Feel free to navigate through some samples of my responsive work below</h1>
+                        <p class="font-italic text-muted mb-1">Click on the links to visit each deployed site</p>
+                        <p class="font-italic text-muted mb-1">Alternatively you can visit my github page for all the coding involved</p>
+                    </header>
                 </div>
-                <!-- Grid item -->
-                <div class="col-lg-4 col-md-6 grid-item mb-4">
-                    <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="../media/Project_static_shop.png" alt="">
-                    <h2 class="h4 text-black">Static e-commerce</h2>
-                                            <p class="small text-muted font-italic">This site...
-                        <a href=""></a>
-                    </p>
-                </div>
-                <!-- Grid item -->
-                <div class="col-lg-4 col-md-6 grid-item mb-4">
-                    <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="../media/Project_whiskey_2.png" alt="">
-                    <h2 class="h4 text-black">Whiskey online shop with sign-up</h2>
-                                        <p class="small text-muted font-italic">This site...
-                        <a href=""></a>
-                    </p>
-                 </div>
-                 <!-- Grid item -->
-                <div class="col-lg-4 col-md-6 grid-item mb-4">
-                    <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="../media/Ghibli-1.png" alt="">
-                    <h2 class="h4 text-black">Studio Ghibli Animation Site</h2>
-                    <p class="small text-muted font-italic">This site...
-                        <a href=""></a>
-                    </p>
-                </div>
-                <!-- Grid item -->
-                <div class="col-lg-4 col-md-6 grid-item mb-4">
-                    <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="../media/tbd-1.png" alt="">
-                    <h2 class="h4 text-black">Online recipe site</h2>
-                    <p class="small text-muted font-italic">This site...
-                        <a href=""></a>
-                    </p>
-                </div>
-                <!-- Grid item -->
-                <div class="col-lg-4 col-md-6 grid-item mb-4">
-                    <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="../media/jbj-1.png" alt="">
-                    <h2 class="h4 text-black">BonJovi fan band site</h2>
-                    <p class="small text-muted font-italic">This site...
-                        <a href=""></a>
-                    </p>                    
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="py-5 header text-center">
-        <div class="container py-4">
-        <div class="row Fivedcc">
-            <div class="col col-md-12 my-auto">
-                <h1 class="display-4 text-black about-display-4">But...It all started with the Code Institute 5 Day Challenge</h1>
-            </div>
-            <div class="col col-md-8 my-auto offset-2">
-                <img src="../media/5dcc.png" class="img-fluid" alt="5DCC cert">
-                <div class="my-5">
-                    <h4 class="text-center">
-                        <a href="https://codeinstitute.net/5-day-coding-challenge/?utm_term=&utm_campaign=&utm_source=adwords&utm_medium=ppc&hsa_net=adwords&hsa_tgt=dsa-564412108988&hsa_ad=306243272841&hsa_acc=8983321581&hsa_grp=53978589537&hsa_mt=b&hsa_cam=1421820850&hsa_kw=&hsa_ver=3&hsa_src=g&gclid=EAIaIQobChMIyPCFoeal7gIVxu7tCh1r4QiVEAAYASAAEgJRyvD_BwE&gclsrc=aw.ds" class="find-out-button">5DCC</a>
-                    </h4>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-        </div>
-{% endblock %}
-{% block postloadjs %}
-    {{ block.super }}
-    <script>
-        $(function () { // Initate masonry grid
-            var $grid = $('.gallery-wrapper').masonry({temSelector: '.grid-item', columnWidth: '.grid-sizer', percentPosition: true});
-        });
-    </script>
-    <script>
-  new Zooming().listen('img')
-</script>
-{% endblock %}
+            </section>
+            <section class="pb-5">
+                <div
+                    class="container text-center">
+                    <!-- Masonry grid -->
+                    <div
+                        class="gallery-wrapper">
+                        <!-- Grid sizer -->
+                        <div class="grid-sizer col-lg-4 col-md-6"></div>
+                        <!-- Grid item -->
+                        <div class="col-lg-4 col-md-6 grid-item mb-4 value-img">
+                            <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="../media/Project_CV.png" alt="project_cv" data-action="zoom">
+                                <h2 class="h4 text-black">Static CV</h2>
+                                <p class="small text-muted font-italic">
+                                    <a href="https://jihanepett.github.io/my-CV/index.html" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>This site has been made with:</p>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" style="width:40%">
+                                        HTML 83.3%
+                                    </div>
+                                    <div class="progress-bar progress-bar-danger" role="progressbar" style="width:10%">
+                                        CSS 10.1%
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Grid item -->
+                            <div class="col-lg-4 col-md-6 grid-item mb-4">
+                                <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="../media/Project_static_shop.png" alt="">
+                                    <h2 class="h4 text-black">Static e-commerce</h2>
+                                    <p class="small text-muted font-italic">
+                                        <a href="https://jihanepett.github.io/NaturalMarocSkincare/" target="_blank">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>This site has been made with:</p>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" style="width:40%">
+                                            HTML 83.3%
+                                        </div>
+                                        <div class="progress-bar progress-bar-danger" role="progressbar" style="width:10%">
+                                            CSS 17.5%
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Grid item -->
+                                <div class="col-lg-4 col-md-6 grid-item mb-4">
+                                    <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="../media/Project_whiskey_2.png" alt="">
+                                        <h2 class="h4 text-black">Whiskey online shop with sign-up</h2>
+                                        <p class="small text-muted font-italic">
+                                            <a href="https://jihanepett.github.io/whiskey-site/" target="_blank">
+                                                <i class="fas fa-external-link-alt"></i>
+                                            </a>This site has been made with:</p>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:40%">
+                                                HTML 65.8%
+                                            </div>
+                                            <div class="progress-bar progress-bar-danger" role="progressbar" style="width:10%">
+                                                CSS 10.1%
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Grid item -->
+                                    <div class="col-lg-4 col-md-6 grid-item mb-4">
+                                        <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="../media/Ghibli-1.png" alt="">
+                                            <h2 class="h4 text-black">Studio Ghibli Animation Site</h2>
+                                            <p class="small text-muted font-italic">
+                                                <a href="https://jihanepett.github.io/_Studio_Ghibli/" target="_blank">
+                                                    <i class="fas fa-external-link-alt"></i>
+                                                </a>This site has been made with:</p>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-success" role="progressbar" style="width:40%">
+                                                    HTML 54.7%
+                                                </div>
+                                                <div class="progress-bar progress-bar-danger" role="progressbar" style="width:10%">
+                                                    CSS 10.5%
+                                                </div>
+                                                <div class="progress-bar progress-bar-primary" role="progressbar" style="width:10%">
+                                                    javascript 29.3%
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Grid item -->
+                                        <div class="col-lg-4 col-md-6 grid-item mb-4">
+                                            <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="../media/tbd-1.png" alt="">
+                                                <h2 class="h4 text-black">Online recipe site</h2>
+                                                <p class="small text-muted font-italic">
+                                                    <a href="https://tbd--recipes.herokuapp.com/" target="_blank">
+                                                        <i class="fas fa-external-link-alt"></i>
+                                                    </a>This site has been made with:</p>
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-success" role="progressbar" style="width:40%">
+                                                        HTML 65%
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-primary" role="progressbar" style="width:40%">
+                                                        Javascript 13.4%
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-secondary" role="progressbar" style="width:10%">
+                                                        Python 10.4%
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-danger" role="progressbar" style="width:10%">
+                                                        CSS 8%
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Grid item -->
+                                            <div class="col-lg-4 col-md-6 grid-item mb-4">
+                                                <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="../media/jbj-1.png" alt="">
+                                                    <p class="small text-muted font-italic">
+                                                        <a href="https://jihanepett.github.io/NaturalMarocSkincare/" target="_blank">
+                                                            <i class="fas fa-external-link-alt"></i>
+                                                        </a>This site has been made with:</p>
+                                                    <div class="progress">
+                                                        <div class="progress-bar progress-bar-success" role="progressbar" style="width:40%">
+                                                            HTML 62.6%
+                                                        </div>
+                                                        <div class="progress-bar progress-bar-primary" role="progressbar" style="width:10%">
+                                                            Javascript 2%
+                                                        </div>
+                                                        <div class="progress-bar progress-bar-secondary" role="progressbar" style="width:20%">
+                                                            Python 29.4%
+                                                        </div>
+                                                        <div class="progress-bar progress-bar-danger" role="progressbar" style="width:20%">
+                                                            CSS 4.7%
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="py-5 header text-center">
+                                        <div class="container py-4">
+                                            <div class="row Fivedcc">
+                                                <div class="col col-md-12 my-auto">
+                                                    <h1 class="display-4 text-black about-display-4">But...It all started with the Code Institute 5 Day Challenge</h1>
+                                                </div>
+                                                <div class="col col-md-8 my-auto offset-2">
+                                                    <img src="../media/5dcc.png" class="img-fluid" alt="5DCC cert">
+                                                        <div class="my-5">
+                                                            <h4 class="text-center">
+                                                                <a href="https://codeinstitute.net/5-day-coding-challenge/?utm_term=&utm_campaign=&utm_source=adwords&utm_medium=ppc&hsa_net=adwords&hsa_tgt=dsa-564412108988&hsa_ad=306243272841&hsa_acc=8983321581&hsa_grp=53978589537&hsa_mt=b&hsa_cam=1421820850&hsa_kw=&hsa_ver=3&hsa_src=g&gclid=EAIaIQobChMIyPCFoeal7gIVxu7tCh1r4QiVEAAYASAAEgJRyvD_BwE&gclsrc=aw.ds" class="find-out-button">5DCC</a>
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                {% endblock %}
+                                {% block postloadjs %}
+                                    {{ block.super }}
+                                    <script>
+                                        $(function () { // Initate masonry grid
+                                            var $grid = $('.gallery-wrapper').masonry({temSelector: '.grid-item', columnWidth: '.grid-sizer', percentPosition: true});
+                                        });
+                                    </script>
+                                    <script>
+                                        new Zooming().listen('img')
+                                    </script>
+                                {% endblock %}
