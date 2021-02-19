@@ -123,6 +123,10 @@ img.img-fluid.profile-img {
     margin-top: 50px;
 }
 
+.githublogo{
+    width: 10%;
+}
+
 .repo-list {
   display: block;
   clear: both;
@@ -212,6 +216,14 @@ i.fas.fa-arrow-up.mx-auto.my-auto {
 /* -------------------------------- Contact */
 .container.container-contact {
     margin-top: 20px;
+}
+
+.card.mb-2 {
+    border: none;
+}
+
+img.card-img-top.contact {
+    width: 50%;
 }
 
 .col-12.contact-message {
