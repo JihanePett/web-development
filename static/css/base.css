@@ -3,7 +3,6 @@ height: 100%;
 }
 
 body {
-background-color: orange;
 background-size: cover;
 height: calc(100vh - 164px);
 color: #555;
@@ -17,6 +16,7 @@ display: inline-flex;
 justify-content: center;
 height: 1.5rem;
 width: 1.5rem;
+color: orange;
 }
 
 i.fas.fa-question-circle {
@@ -261,7 +261,7 @@ i.fas.fa-arrow-up.mx-auto.my-auto {
 }
 
 .allauth-form-inner-content a {
-    color: #e73d3e; /* text-info */
+    color: orange; /* text-info */
     text-decoration: none;
 }
 

@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'home',
     'blog',
+    'profiles',
     'crispy_forms',
 ]
 
