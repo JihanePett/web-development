@@ -84,7 +84,6 @@ border: 1px solid black !important;
     z-index: -1;
 }
 
-
 a.category-badge > span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
@@ -106,9 +105,8 @@ a.category-badge > span.badge:hover {
     margin-top: 5px;
 }
 
-.jumbotron-transparent {
-    background-color: transparent;
-    color: black;
+.fivedcc-img {
+    margin-bottom: 10px;
 }
 
 /* -------------------------------- Homepage profile image */
