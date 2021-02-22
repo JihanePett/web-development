@@ -32,7 +32,6 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['webdev-jp.herokuapp.com', 'localhost']
 
-
 # Application definition
 
 INSTALLED_APPS = [
