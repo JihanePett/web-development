@@ -22,7 +22,7 @@
                     <div class="my-5">
                         <h4>
                             <a href="{% url 'github' %}" class="portfolio-button btn btn-lg rounded-0 text-uppercase py-3">Portfolio</a>
-                            <a href="../media/JihaneP_CV.pdf" class="portfolio-button btn btn-lg rounded-0 text-uppercase py-3" target="_blank">Download my CV
+                            <a href="{% get_media_prefix %}JihaneP_CV.pdf" class="portfolio-button btn btn-lg rounded-0 text-uppercase py-3" target="_blank">Download my CV
                                 <i class="fas fa-download pro-xp-dl-link" aria-hidden="true"></i>
                             </a>
                         </h4>
@@ -48,7 +48,7 @@
                         <div class="grid-sizer col-lg-4 col-md-6"></div>
                         <!-- Grid item -->
                         <div class="col-lg-4 col-md-6 grid-item mb-4 value-img">
-                            <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="../media/Project_CV.png" alt="project_cv" data-action="zoom">
+                            <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="{% get_media_prefix %}Project_CV.png" alt="project_cv" data-action="zoom">
                                 <h2 class="h4 text-black">Static CV</h2>
                                 <p class="small text-muted font-italic">
                                     <a href="https://jihanepett.github.io/my-CV/index.html" target="_blank">
@@ -66,7 +66,7 @@
                             </div>
                             <!-- Grid item -->
                             <div class="col-lg-4 col-md-6 grid-item mb-4">
-                                <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="../media/Project_static_shop.png" alt="">
+                                <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="{% get_media_prefix %}Project_static_shop.png" alt="">
                                     <h2 class="h4 text-black">Static e-commerce</h2>
                                     <p class="small text-muted font-italic">
                                         <a href="https://jihanepett.github.io/NaturalMarocSkincare/" target="_blank">
@@ -84,7 +84,7 @@
                                 </div>
                                 <!-- Grid item -->
                                 <div class="col-lg-4 col-md-6 grid-item mb-4">
-                                    <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="../media/Project_whiskey_2.png" alt="">
+                                    <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="{% get_media_prefix %}Project_whiskey_2.png" alt="">
                                         <h2 class="h4 text-black">Whiskey online shop with sign-up</h2>
                                         <p class="small text-muted font-italic">
                                             <a href="https://jihanepett.github.io/whiskey-site/" target="_blank">
@@ -102,7 +102,7 @@
                                     </div>
                                     <!-- Grid item -->
                                     <div class="col-lg-4 col-md-6 grid-item mb-4">
-                                        <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="../media/Ghibli-1.png" alt="">
+                                        <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="{% get_media_prefix %}Ghibli-1.png" alt="">
                                             <h2 class="h4 text-black">Studio Ghibli Animation Site</h2>
                                             <p class="small text-muted font-italic">
                                                 <a href="https://jihanepett.github.io/_Studio_Ghibli/" target="_blank">
@@ -123,7 +123,7 @@
                                         </div>
                                         <!-- Grid item -->
                                         <div class="col-lg-4 col-md-6 grid-item mb-4">
-                                            <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="../media/tbd-1.png" alt="">
+                                            <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="{% get_media_prefix %}tbd-1.png" alt="">
                                                 <h2 class="h4 text-black">Online recipe site</h2>
                                                 <p class="small text-muted font-italic">
                                                     <a href="https://tbd--recipes.herokuapp.com/" target="_blank">
@@ -147,7 +147,7 @@
                                             </div>
                                             <!-- Grid item -->
                                             <div class="col-lg-4 col-md-6 grid-item mb-4">
-                                                <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="../media/jbj-1.png" alt="">
+                                                <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="{% get_media_prefix %}jbj-1.png" alt="">
                                                     <p class="small text-muted font-italic">
                                                         <a href="https://jihanepett.github.io/NaturalMarocSkincare/" target="_blank">
                                                             <i class="fas fa-external-link-alt icon"></i>
@@ -178,7 +178,7 @@
                                                     <h1 class="display-4 text-black about-display-4">But...It all started with the Code Institute 5 Day Challenge</h1>
                                                 </div>
                                                 <div class="col col-md-8 my-auto offset-2">
-                                                    <img src="../media/5dcc.png" class="img-fluid fivedcc-img" alt="5DCC cert">
+                                                    <img src="{% get_media_prefix %}5dcc.png" class="img-fluid fivedcc-img" alt="5DCC cert">
                                                         <h4>
                                                             <a href="https://codeinstitute.net/" class="portfolio-button btn btn-lg rounded-0 text-uppercase py-3" target="_blank">Code Institute</a>
                                                         </h4>

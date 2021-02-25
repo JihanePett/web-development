@@ -19,7 +19,7 @@
                             <img src="{{ post.image.url }}" class="card-img-top" alt="{{ post.name }}"></a>
                         {% else %}
                             <a href="">
-                                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ post.name }}"/>
+                                <img class="card-img-top img-fluid" src="{% get_media_prefix %}noimage.png" alt="{{ post.name }}"/>
                             </a>
                         {% endif %}
                         <div class="card-body">
