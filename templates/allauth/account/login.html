@@ -20,13 +20,13 @@ for a {{ site_name }} account{% endblocktrans %}</p>
   <ul class="socialaccount_providers" style="list-style-type:none;">
     {% include "socialaccount/snippets/provider_list.html" with process="login" %}
   </ul>
-  <div class="login-or text-white">Or enter your details below:</div>
+  <div class="login-or text-black">Or enter your details below:</div>
 </div>
 
 {% include "socialaccount/snippets/login_extra.html" %}
 
 {% else %}
-<p class="text-white">{% blocktrans %}If you have not created an account yet, then please
+<p class="text-black">{% blocktrans %}If you have not created an account yet, then please
 <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
 {% endif %}
 
@@ -39,7 +39,7 @@ for a {{ site_name }} account{% endblocktrans %}</p>
   <a class="btn btn-light allauth-a-light" href="{% url 'home' %}">Return to the Homepage</a>
   <button class="primaryAction" type="submit">{% trans "Sign In" %}</button>
   <p class="mt-2">
-    <a class="button secondaryAction text-white" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
+    <a class="button secondaryAction text-black" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
   </p>
 </form>
 

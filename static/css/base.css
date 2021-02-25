@@ -28,6 +28,14 @@ text-transform: uppercase;
 color: orange;
 }
 
+.navbar-light .navbar-nav .nav-link {
+    color: orange;
+}
+
+.text-orange{
+    color: orange;
+}
+
 .main-logo-link {
 width: fit-content;
 }
@@ -55,8 +63,8 @@ color: white;
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-background: #222;
-color: white;
+background: orange;
+color: black;
 }
 
 .text-black {

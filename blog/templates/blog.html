@@ -11,7 +11,7 @@
 {% block content %}
     <div class="overlay"></div>
     {% if request.user.is_superuser %}
-        <h2 class="display-4 text-black">Blog Management</h2>
+        <h2 class="display-4 text-black text-center">Blog Management</h2>
         <p class="text-center text-black">You can add a new post or go on each post to update or delete them</p>
         <h2 class="text-center addapost-heading">
             <a class="addapost-heading" href="{% url 'add_post' %}">ADD A POST</a>
